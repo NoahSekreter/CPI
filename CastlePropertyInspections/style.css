@@ -1,0 +1,93 @@
+﻿* {
+    margin: 0;
+    /*font-family: 'Oswald', sans-serif;*/
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: #f6f6f6;
+}
+
+.row {
+    margin: 0;
+}
+
+/* Header */
+#header {
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.header-backdrop {
+    flex: 1 1 auto;
+    background-image: url('Images/house-resized.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    position: relative;
+}
+
+.faded-panel, .header-backdrop img {
+    width: 500px;
+    height: 250px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.faded-panel {
+    background-color: #FFF;
+    opacity: .7;
+}
+
+.header-backdrop img {
+    padding: 20px;
+}
+
+.menu {
+    flex: 0 1;
+    text-align: center;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+
+.menu .col-xs-4 {
+    height: 50px;
+    background-color: #ccc;
+    color: #000;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 10px 0 10px 0;
+    -webkit-transition: .3s linear; /* Safari */
+    transition: .3s linear;
+}
+
+.menu .col-xs-4:hover {
+    background-color: #eee;
+}
+
+/* Body */
+#body {
+    padding: 0 20px 0 20px;
+}
+
+/* Pricing */
+.price {
+    padding: 10px;
+    background-color: #121212;
+    color: #e5e5e5;
+}
+
+/* Footer */
+#footer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ccc;
+}
