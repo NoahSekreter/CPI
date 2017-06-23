@@ -79,10 +79,24 @@ body {
 }
 
 /* Pricing */
+.pricing-container a {
+    text-decoration: none !important;
+}
+
 .price {
     padding: 10px;
     background-color: #121212;
     color: #e5e5e5;
+}
+
+/* Contact */
+#contact {
+
+}
+
+.schedule {
+    width: 100%;
+    margin-top: 20px;
 }
 
 /* Footer */
