@@ -96,7 +96,9 @@
   <ItemGroup>
     <Content Include="Images\house-resized.jpg" />
     <Content Include="Images\house.jpg" />
+    <Content Include="Images\IMG_4217.PNG" />
     <Content Include="Images\logo.png" />
+    <Content Include="Images\radon_template.jpg" />
     <Content Include="index.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">

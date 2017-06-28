@@ -78,6 +78,21 @@ body {
     padding: 0 20px 0 20px;
 }
 
+/* About */
+#about {
+
+}
+
+#about .row {
+    padding: 10px;
+
+    background-color: #fff;
+}
+
+#about .inverted {
+    background-color: #e2e2e2;
+}
+
 /* Pricing */
 .price {
     padding: 10px;
