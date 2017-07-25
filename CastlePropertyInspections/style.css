@@ -4,8 +4,20 @@
     font-family: 'Merriweather', serif;
 }
 
+h1, h2, h3 {
+    margin: 0;
+    padding: 20px 0 10px 0;
+}
+
+p {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
 body {
-    background-color: #f6f6f6;
+    background-image: url('Images/house-resized.jpg');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .row {
@@ -21,9 +33,6 @@ body {
 
 .header-backdrop {
     flex: 1 1 auto;
-    background-image: url('Images/house-resized.jpg');
-    background-size: cover;
-    background-attachment: fixed;
     text-align: center;
     position: relative;
 }
@@ -35,6 +44,31 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.faded-button, .header-button a {
+    width: 500px;
+    height: 60px;
+    position: absolute;
+    top: calc(50% + 150px);
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.faded-button {
+    background-color: #FFF;
+    opacity: .7;
+}
+
+.header-button a {
+    transition: .3s linear;
+    text-decoration: none;
+    color: black;
+}
+
+.header-button a:hover {
+    background-color: #FFF;
 }
 
 .faded-panel {
@@ -49,6 +83,7 @@ body {
 .menu {
     flex: 0 1;
     text-align: center;
+    background-color: #ccc;
 }
 
 .navbar-fixed {
@@ -58,7 +93,7 @@ body {
     width: 100%;
 }
 
-.menu .col-xs-4 {
+.menu .col-sm-2 {
     height: 50px;
     background-color: #ccc;
     color: #000;
@@ -69,13 +104,14 @@ body {
     transition: .3s linear;
 }
 
-.menu .col-xs-4:hover {
+.menu .col-sm-2:hover {
     background-color: #eee;
 }
 
 /* Body */
 #body {
     padding: 0 20px 0 20px;
+    background-color: #fff;
 }
 
 /* About */
@@ -85,12 +121,7 @@ body {
 
 #about .row {
     padding: 10px;
-
-    background-color: #fff;
-}
-
-#about .inverted {
-    background-color: #e2e2e2;
+    /*background-color: #e2e2e2;*/
 }
 
 /* Pricing */
@@ -114,9 +145,36 @@ body {
     margin-top: 20px;
 }
 
+
+/* Inspection */
+#inspection {
+    background-color: #DDD;
+    padding: 20px;
+}
+
+#inspection a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.form-container {
+    /*padding: 0 20px 0 20px;*/
+}
+
+.inspection-col {
+    padding-left: 0;
+    padding-right: 20px;
+    float: left;
+}
+
+.home-button {
+    background-color: rosybrown;
+    text-align: center;
+    width: 200px;
+}
+
 /* Footer */
-#footer {
-    margin-top: 20px;
+.footer {
     padding: 20px;
     background-color: #ccc;
 }

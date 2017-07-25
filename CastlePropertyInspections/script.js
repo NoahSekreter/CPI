@@ -26,7 +26,7 @@ $('a[href*="#"]')
           if (target.length) {
               event.preventDefault();
               $('html, body').animate({
-                  scrollTop: target.offset().top - 60
+                  scrollTop: target.offset().top - 50
               }, 1000, function () {
                   var $target = $(target);
                   $target.focus();

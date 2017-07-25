@@ -94,12 +94,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="favicon.ico" />
     <Content Include="Images\house-resized.jpg" />
     <Content Include="Images\house.jpg" />
     <Content Include="Images\IMG_4217.PNG" />
     <Content Include="Images\logo.png" />
     <Content Include="Images\radon_template.jpg" />
     <Content Include="index.html" />
+    <Content Include="inspection.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
