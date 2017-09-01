@@ -101,7 +101,6 @@
     <Content Include="Images\logo.png" />
     <Content Include="Images\radon_template.jpg" />
     <Content Include="index.html" />
-    <Content Include="inspection.html" />
     <Content Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

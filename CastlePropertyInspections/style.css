@@ -26,9 +26,9 @@ body {
 
 /* Header */
 #header {
-  display: flex;
-  flex-flow: column;
-  height: 100vh;
+    display: flex;
+    flex-flow: column;
+    height: 100vh;
 }
 
 .header-backdrop {
@@ -44,9 +44,14 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    padding: 20px;
 }
 
-.faded-button, .header-button a {
+.header-button {
+    line-height: 60px;
+}
+
+#inspection-button {
     width: 500px;
     height: 60px;
     position: absolute;
@@ -54,30 +59,21 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-}
-
-.faded-button {
+    font-size: 24px;
+    vertical-align: middle;
     background-color: #FFF;
     opacity: .7;
-}
-
-.header-button a {
     transition: .3s linear;
-    text-decoration: none;
-    color: black;
 }
 
-.header-button a:hover {
-    background-color: #FFF;
+#inspection-button:hover {
+    cursor: pointer;
+    opacity: .9;
 }
 
 .faded-panel {
     background-color: #FFF;
     opacity: .7;
-}
-
-.header-backdrop img {
-    padding: 20px;
 }
 
 .menu {
@@ -93,7 +89,7 @@ body {
     width: 100%;
 }
 
-.menu .col-sm-2 {
+.menu .col-md-2 {
     height: 50px;
     background-color: #ccc;
     color: #000;
@@ -104,7 +100,7 @@ body {
     transition: .3s linear;
 }
 
-.menu .col-sm-2:hover {
+.menu .col-md-2:hover {
     background-color: #eee;
 }
 
@@ -135,11 +131,6 @@ body {
     color: #e5e5e5;
 }
 
-/* Contact */
-#contact {
-
-}
-
 .schedule {
     width: 100%;
     margin-top: 20px;
@@ -155,26 +146,132 @@ body {
 #inspection a {
     text-decoration: none !important;
     color: black !important;
-}
 
-.form-container {
-    /*padding: 0 20px 0 20px;*/
-}
-
-.inspection-col {
-    padding-left: 0;
-    padding-right: 20px;
-    float: left;
-}
-
-.home-button {
     background-color: rosybrown;
     text-align: center;
     width: 200px;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+}
+
+#radon img {
+    width: 90%;
 }
 
 /* Footer */
 .footer {
     padding: 20px;
     background-color: #ccc;
+}
+
+
+/*Schedule inspection popup */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #142f14;
+    color: white;
+}
+
+.modal-body {
+    padding: 10px 16px;
+}
+
+.modal-footer {
+    padding: 15px 15px 5px 15px;
+    background-color: #142f14;
+    color: white;
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 5vh;
+    padding: 0;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0} 
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Form input formating */
+.form-container .standard-input {
+    padding: 5px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.form-container textarea {
+    padding: 5px;
+    width: 100%;
+    height: 200px;
+}
+
+.checkbox-container {
+    padding: 0;
+}
+
+.checkbox-custom {
+    opacity: 0;
+    position: absolute;   
+}
+
+.checkbox-custom, .checkbox-custom-label {
+    cursor: pointer;
+}
+
+.checkbox-custom-label:before {
+    content: '';
+    background: #fff;
+    border: 2px solid #ddd;
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+.checkbox-custom:checked + .checkbox-custom-label:before {
+    background: #452200;
 }

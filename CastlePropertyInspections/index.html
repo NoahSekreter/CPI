@@ -25,23 +25,61 @@
     <div id="header">
         <div class="row header-backdrop">
             <div class="faded-panel"></div>
-            <!--<img src="Images/logo.png" />-->
-            <img src="Images/IMG_4217.PNG" />
+            <img src="Images/logo.png" />
+            <!--<img src="Images/IMG_4217.PNG" />-->
         </div>
         <div class="row header-button">
-            <div class="faded-button"></div>
-            <a href="inspection.html">
-                <h3>Click Here to Schedule an Inspection</h3>
-            </a>
+            <div id="inspection-button">Click Here to Schedule an Inspection</div>
         </div>
         <div class="menu">
             <div class="row">
-                <a href="#header" class="col-sm-2">Home</a>
-                <a href="#about" class="col-sm-2">About Us</a>
-                <a href="#services" class="col-sm-2">Services</a>
-                <a href="#pricing" class="col-sm-2">Pricing</a>
-                <a href="#radon" class="col-sm-2">Radon</a>
-                <a href="#testimonials" class="col-sm-2">Testimonials</a>
+                <a href="#header" class="col-md-2 col-xs-4">Home</a>
+                <a href="#about" class="col-md-2 col-xs-4">About Us</a>
+                <a href="#services" class="col-md-2 col-xs-4">Services</a>
+                <a href="#pricing" class="col-md-2 col-xs-4">Pricing</a>
+                <a href="#radon" class="col-md-2 col-xs-4">Radon</a>
+                <a href="#testimonials" class="col-md-2 col-xs-4">Testimonials</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inspection Modal -->
+    <div id="popUp" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Schedule an Inspection / Contact Us</h2>
+            </div>
+            <div class="modal-body">
+                <form class="form-container row">
+                    <div class="col-md-6">
+                        <div>
+                            <input placeholder="Name" class="standard-input" id="name"/>
+                        </div>
+                        <div>
+                            <input placeholder="Email" class="standard-input" id="email"/>
+                        </div>
+
+                        <h4>If you are scheduling an inspection, choose which one (or both)</h4>
+                        <div class="col-md-6 checkbox-container">
+                            <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                            <label for="checkbox-1" class="checkbox-custom-label">General Inspection</label>
+                        </div>
+                        <div class="col-md-6 checkbox-container">
+                            <input id="checkbox-2" class="checkbox-custom" name="checkbox-2" type="checkbox">
+                            <label for="checkbox-2" class="checkbox-custom-label">Radon</label>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <textarea placeholder="Additional comments and concerns"></textarea>
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+                <p>Email: email@host.com</p>
+                <p>Phone: 123-456-7890</p>
+            </div>
+            <div class="modal-footer">
+                <p>&copy; 2017 - Castle Property Inspections</p>
             </div>
         </div>
     </div>
@@ -51,12 +89,12 @@
             <div id="about">
                 <h2>About Us</h2>
                 <div class="row">
-                    <div class="col-sm-6">
+                    <div class="col-lg-6">
                         <p>What truly is a home inspection? A home inspection is an inspection of your hard earned money, your dreams, your hopes and your family’s future memories that should last for a lifetime. Your choice in hiring a home inspection company to represent you is an important part of buying a home. Our home inspection experts take your investment through a digital 400 point home inspection plan (with pictures) that will minimize your risk and provide you with ALL of the facts regarding the physical conditions of your future home or commercial property so that an informed investment decision can be made – without undue stress, costly repairs, or delays. Some home sellers will try to hide minor and major problems with the home.</p>
                         <p>An alarming fact most people do not know is that the state of Ohio, even after numerous state bills being introduced over the years, still does not require a home inspector to be licensed. However, most states do require a home inspection to be completed prior to the sale of the home. This is why it is so important to get your home inspectors qualifications in detail and ask for proof. We are fully qualified by the International Association of Certified Home Inspectors (InterNACHI) for a high standard of ethics and inspection procedures. With Sharp Shooters, you will always get a professional and accurate inspection that you can trust.</p>
                         <p>Our typical home inspection will take approximately three hours and will provide you with as much information as possible about your new home or commercial property. All of the conditions noted during the home inspection are recorded for your reference, including results from tests performed on various property systems. Our 400 point inspection FX reporting system is produced in an easy to understand computerized report to provide you with an unbiased, professional evaluation of the physical condition of your future home or commercial property. Your report will be given to you on site with digital photographs after the inspection is complete. Call now to schedule your next home or commercial inspection.</p>
                     </div>
-                    <div class="col-sm-6">
+                    <div class="col-lg-6">
                         <!-- TODO : Get images for slideshow -->
                         <p>Slideshow goes here</p>
                     </div>
@@ -168,7 +206,6 @@
                 <h2>Testimonials</h2>
                 <p>Curabitur posuere lectus nibh. Morbi laoreet suscipit lacus vitae luctus. Nunc sagittis sit amet tortor et egestas. Cras vitae mattis augue. Proin est nulla, accumsan ac risus eu, pulvinar tincidunt urna. Fusce eget nunc eu felis vestibulum gravida. In aliquam eu ex eget finibus.</p>
                 <p>Ut purus metus, elementum vel dapibus in, viverra nec orci. Nam convallis bibendum porttitor. Sed blandit nisl vitae varius facilisis. Aenean commodo vestibulum turpis, suscipit pretium neque euismod ac. Nullam tincidunt, massa ut condimentum lacinia, est orci convallis risus, in imperdiet justo eros vitae tellus. Pellentesque fringilla ante vel elit lobortis, iaculis placerat massa imperdiet. Curabitur pretium, augue nec condimentum gravida, tortor est rhoncus metus, id tempus tellus nisl quis sapien.</p>
-                
             </div>
         </div>
     <div class="footer">
